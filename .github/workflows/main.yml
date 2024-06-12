@@ -58,7 +58,7 @@ run-appinspect:
       - name: Run AppInspect
         run: |
           ls -la .
-     ls -la app-dir/
+          ls -la app-dir/
           FILE_NAME=$(ls -1 app-dir/)
           splunk-appinspect inspect app-dir/$FILE_NAME --output-file appinspect_result.json --mode test
 
